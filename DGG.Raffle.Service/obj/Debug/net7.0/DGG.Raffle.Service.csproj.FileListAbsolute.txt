@@ -1,0 +1,12 @@
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\bin\Debug\net7.0\DGG.Raffle.Service.deps.json
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\bin\Debug\net7.0\DGG.Raffle.Service.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\bin\Debug\net7.0\DGG.Raffle.Service.pdb
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.csproj.AssemblyReference.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.AssemblyInfoInputs.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.AssemblyInfo.cs
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.csproj.CoreCompileInputs.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\refint\DGG.Raffle.Service.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\DGG.Raffle.Service.pdb
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Service\obj\Debug\net7.0\ref\DGG.Raffle.Service.dll

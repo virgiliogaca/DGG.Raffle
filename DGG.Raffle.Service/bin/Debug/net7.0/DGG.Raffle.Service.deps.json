@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DGG.Raffle.Service/1.0.0": {
+        "runtime": {
+          "DGG.Raffle.Service.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DGG.Raffle.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

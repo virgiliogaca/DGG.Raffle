@@ -1,0 +1,17 @@
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\bin\Debug\net7.0\DGG.Raffle.Infrastructure.deps.json
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\bin\Debug\net7.0\DGG.Raffle.Infrastructure.runtimeconfig.json
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\bin\Debug\net7.0\DGG.Raffle.Infrastructure.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\bin\Debug\net7.0\DGG.Raffle.Infrastructure.pdb
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.pdb
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.AssemblyInfo.cs
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.csproj.CopyComplete
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\refint\DGG.Raffle.Infrastructure.dll
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.pdb
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\DGG.Raffle.Infrastructure.genruntimeconfig.cache
+C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure\obj\Debug\net7.0\ref\DGG.Raffle.Infrastructure.dll

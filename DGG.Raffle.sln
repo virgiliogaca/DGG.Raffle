@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.API", "DGG.Raffle.API\DGG.Raffle.API.csproj", "{078CF5FD-5E68-4654-8D16-5AB85BFABF56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Service", "DGG.Raffle.Service\DGG.Raffle.Service.csproj", "{80B6C0FA-87D8-486D-8041-36E65181AE2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Infrastructure", "DGG.Raffle.Infrastructure\DGG.Raffle.Infrastructure.csproj", "{99F33656-8E1F-4148-A615-4B06A58815EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Infrastructure.Abstract", "DGG.Raffle.Infrastructure.Abstract\DGG.Raffle.Infrastructure.Abstract.csproj", "{A30B1F0A-B23F-4F7F-86D3-B17F6724C5A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Service.Abstract", "DGG.Raffle.Service.Abstract\DGG.Raffle.Service.Abstract.csproj", "{EE096D6F-808E-48A7-A085-17481F38A65E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078CF5FD-5E68-4654-8D16-5AB85BFABF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078CF5FD-5E68-4654-8D16-5AB85BFABF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078CF5FD-5E68-4654-8D16-5AB85BFABF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078CF5FD-5E68-4654-8D16-5AB85BFABF56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B6C0FA-87D8-486D-8041-36E65181AE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B6C0FA-87D8-486D-8041-36E65181AE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B6C0FA-87D8-486D-8041-36E65181AE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B6C0FA-87D8-486D-8041-36E65181AE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F33656-8E1F-4148-A615-4B06A58815EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F33656-8E1F-4148-A615-4B06A58815EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F33656-8E1F-4148-A615-4B06A58815EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F33656-8E1F-4148-A615-4B06A58815EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A30B1F0A-B23F-4F7F-86D3-B17F6724C5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A30B1F0A-B23F-4F7F-86D3-B17F6724C5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A30B1F0A-B23F-4F7F-86D3-B17F6724C5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A30B1F0A-B23F-4F7F-86D3-B17F6724C5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE096D6F-808E-48A7-A085-17481F38A65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE096D6F-808E-48A7-A085-17481F38A65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE096D6F-808E-48A7-A085-17481F38A65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE096D6F-808E-48A7-A085-17481F38A65E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E110245D-B82E-4C3F-8385-AF8EEC19FA8D}
+	EndGlobalSection
+EndGlobal
