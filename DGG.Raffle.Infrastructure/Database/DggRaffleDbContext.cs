@@ -31,7 +31,6 @@ namespace DGG.Raffle.Infrastructure.Database
         {
             modelBuilder.Entity<RaffleSessions>()
                 .HasKey(s => s.Id);
-                ;
 
             modelBuilder.Entity<Charities>()
                 .HasKey(s => s.Id);
@@ -40,6 +39,9 @@ namespace DGG.Raffle.Infrastructure.Database
                 .HasData(
                 new Charities { Id = 1, Name = "Against Malaria Foundation" }
                 );
+
+            modelBuilder.Entity<RaffleEntries>()
+                .HasKey(s => s.Id);
 
             modelBuilder.Entity<RaffleEntries>()
                 .HasOne(s => s.Charity)

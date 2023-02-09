@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DGG.Raffle.Infrastructure.Abstract\DGG.Raffle.Infrastructure.Abstract.csproj" />
+  </ItemGroup>
+
 </Project>

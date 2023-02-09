@@ -22,3 +22,6 @@ C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\obj\Debug\
 C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\obj\Debug\net7.0\refint\DGG.Raffle.Business.Abstract.dll
 C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\obj\Debug\net7.0\DGG.Raffle.Business.Abstract.pdb
 C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\obj\Debug\net7.0\ref\DGG.Raffle.Business.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.pdb
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Service.Abstract\obj\Debug\net7.0\DGG.Raffle.Business.Abstract.csproj.CopyComplete

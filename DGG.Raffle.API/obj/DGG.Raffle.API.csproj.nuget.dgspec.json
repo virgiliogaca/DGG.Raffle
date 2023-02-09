@@ -277,7 +277,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

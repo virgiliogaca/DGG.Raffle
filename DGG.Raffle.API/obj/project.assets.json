@@ -1297,6 +1297,9 @@
       "DGG.Raffle.Business.Abstract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DGG.Raffle.Infrastructure.Abstract": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DGG.Raffle.Business.Abstract.dll": {}
         },

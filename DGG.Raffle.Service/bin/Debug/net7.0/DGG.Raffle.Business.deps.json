@@ -16,6 +16,9 @@
         }
       },
       "DGG.Raffle.Business.Abstract/1.0.0": {
+        "dependencies": {
+          "DGG.Raffle.Infrastructure.Abstract": "1.0.0"
+        },
         "runtime": {
           "DGG.Raffle.Business.Abstract.dll": {}
         }

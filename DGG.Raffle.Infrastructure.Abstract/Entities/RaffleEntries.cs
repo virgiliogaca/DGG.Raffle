@@ -13,8 +13,6 @@ namespace DGG.Raffle.Infrastructure.Abstract.Entities
             isRaffleWinner = false;
             ChatterMovie = string.Empty;
             ChatterName = string.Empty;
-            RaffleSession = new RaffleSessions();
-            Charity = new Charities();
         }
 
         /// <summary>
@@ -81,19 +79,19 @@ namespace DGG.Raffle.Infrastructure.Abstract.Entities
         public bool isRaffleWinner { get; set; }
 
         /// <summary>
-        /// Gets or sets the raffle session.
-        /// </summary>
-        /// <value>
-        /// The raffle session.
-        /// </value>
-        public RaffleSessions RaffleSession { get; set; }
-
-        /// <summary>
         /// Gets or sets the charity.
         /// </summary>
         /// <value>
         /// The charity.
         /// </value>
         public Charities Charity { get; set; }
+
+        /// <summary>
+        /// Gets or sets the raffle session.
+        /// </summary>
+        /// <value>
+        /// The raffle session.
+        /// </value>
+        public RaffleSessions RaffleSession { get; set; }
     }
 }

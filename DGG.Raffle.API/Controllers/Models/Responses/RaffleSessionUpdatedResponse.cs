@@ -3,7 +3,7 @@
     /// <summary>
     /// New Raffle Session Created Model.
     /// </summary>
-    public class RaffleSessionCreatedResponse
+    public class RaffleSessionUpdatedResponse
     {
         /// <summary>
         /// Gets or sets the raffle session identifier.
