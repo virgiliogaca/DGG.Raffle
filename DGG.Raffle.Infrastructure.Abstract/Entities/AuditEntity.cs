@@ -9,6 +9,7 @@
         {
             CreatedDate = DateTime.UtcNow;
             IsActive = true;
+            CreatedBy = "sys";
         }
 
         /// <summary>
@@ -33,7 +34,7 @@
         /// <value>
         ///   <c>true</c> if [modified date]; otherwise, <c>false</c>.
         /// </value>
-        public bool ModifiedDate { get; set; }
+        public DateTime? ModifiedDate { get; set; }
 
         /// <summary>
         /// Gets or sets the modified by.

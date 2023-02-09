@@ -27,7 +27,7 @@ namespace DGG.Raffle.Infrastructure.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ModifiedDate = table.Column<bool>(type: "bit", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -44,7 +44,7 @@ namespace DGG.Raffle.Infrastructure.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ModifiedDate = table.Column<bool>(type: "bit", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -67,7 +67,7 @@ namespace DGG.Raffle.Infrastructure.Migrations
                     isRaffleWinner = table.Column<bool>(type: "bit", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ModifiedDate = table.Column<bool>(type: "bit", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -94,7 +94,7 @@ namespace DGG.Raffle.Infrastructure.Migrations
                 schema: "catalog",
                 table: "Charities",
                 columns: new[] { "Id", "CreatedBy", "CreatedDate", "IsActive", "ModifiedBy", "ModifiedDate", "Name" },
-                values: new object[] { 1, null, new DateTime(2023, 2, 8, 23, 18, 4, 165, DateTimeKind.Utc).AddTicks(400), true, null, false, "Against Malaria Foundation" });
+                values: new object[] { 1, "sys", new DateTime(2023, 2, 9, 0, 8, 36, 546, DateTimeKind.Utc).AddTicks(4433), true, null, null, "Against Malaria Foundation" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_RaffleEntries_CharityId",

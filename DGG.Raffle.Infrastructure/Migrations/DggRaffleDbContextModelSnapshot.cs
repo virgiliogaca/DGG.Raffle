@@ -42,8 +42,8 @@ namespace DGG.Raffle.Infrastructure.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("ModifiedDate")
-                        .HasColumnType("bit");
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -57,9 +57,9 @@ namespace DGG.Raffle.Infrastructure.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 2, 8, 23, 18, 4, 165, DateTimeKind.Utc).AddTicks(400),
+                            CreatedBy = "sys",
+                            CreatedDate = new DateTime(2023, 2, 9, 0, 8, 36, 546, DateTimeKind.Utc).AddTicks(4433),
                             IsActive = true,
-                            ModifiedDate = false,
                             Name = "Against Malaria Foundation"
                         });
                 });
@@ -93,8 +93,8 @@ namespace DGG.Raffle.Infrastructure.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("ModifiedDate")
-                        .HasColumnType("bit");
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<double>("MoneyDonated")
                         .HasColumnType("float");
@@ -132,8 +132,8 @@ namespace DGG.Raffle.Infrastructure.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("ModifiedDate")
-                        .HasColumnType("bit");
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
