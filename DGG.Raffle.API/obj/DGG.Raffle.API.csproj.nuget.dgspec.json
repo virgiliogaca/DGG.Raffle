@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj": {}
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj": {
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
+        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
         "projectName": "DGG.Raffle.API",
-        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
+        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
         "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\obj\\",
+        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj"
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj"
+              },
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj"
+              },
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj"
               }
             }
           }
@@ -67,6 +73,10 @@
               "target": "Package",
               "version": "[7.0.2, )"
             },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.17.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -95,14 +105,14 @@
         }
       }
     },
-    "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
+        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
         "projectName": "DGG.Raffle.Infrastructure.Abstract",
-        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
+        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
         "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\obj\\",
+        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -155,14 +165,14 @@
         }
       }
     },
-    "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj": {
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj",
         "projectName": "DGG.Raffle.Infrastructure",
-        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,8 +194,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
-                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj"
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj"
               }
             }
           }
@@ -219,6 +229,133 @@
               "version": "[7.0.2, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
+        "projectName": "DGG.Raffle.Business.Abstract",
+        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
+        "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\virgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj",
+        "projectName": "DGG.Raffle.Business",
+        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj",
+        "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\virgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj"
+              },
+              "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {
+                "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",

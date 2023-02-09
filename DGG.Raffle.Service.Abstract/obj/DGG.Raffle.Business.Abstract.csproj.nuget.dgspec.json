@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {}
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {}
   },
   "projects": {
-    "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {
+    "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
+        "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
         "projectName": "DGG.Raffle.Business.Abstract",
-        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
+        "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
         "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\obj\\",
+        "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -7,14 +7,38 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "DGG.Raffle.Business/1.0.0": {
+        "dependencies": {
+          "DGG.Raffle.Business.Abstract": "1.0.0",
+          "DGG.Raffle.Infrastructure.Abstract": "1.0.0"
+        },
         "runtime": {
           "DGG.Raffle.Business.dll": {}
+        }
+      },
+      "DGG.Raffle.Business.Abstract/1.0.0": {
+        "runtime": {
+          "DGG.Raffle.Business.Abstract.dll": {}
+        }
+      },
+      "DGG.Raffle.Infrastructure.Abstract/1.0.0": {
+        "runtime": {
+          "DGG.Raffle.Infrastructure.Abstract.dll": {}
         }
       }
     }
   },
   "libraries": {
     "DGG.Raffle.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DGG.Raffle.Business.Abstract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DGG.Raffle.Infrastructure.Abstract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

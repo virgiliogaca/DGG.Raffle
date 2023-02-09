@@ -10,3 +10,15 @@ C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract
 C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\refint\DGG.Raffle.Infrastructure.Abstract.dll
 C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.pdb
 C:\Users\virgi\Documents\Repos\DGG\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\ref\DGG.Raffle.Infrastructure.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.deps.json
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\bin\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.pdb
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.csproj.AssemblyReference.cache
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.AssemblyInfoInputs.cache
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.AssemblyInfo.cs
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.csproj.CoreCompileInputs.cache
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\refint\DGG.Raffle.Infrastructure.Abstract.dll
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\DGG.Raffle.Infrastructure.Abstract.pdb
+C:\Users\virgi\Documents\Repos\DGG.Raffle\DGG.Raffle.Infrastructure.Abstract\obj\Debug\net7.0\ref\DGG.Raffle.Infrastructure.Abstract.dll
