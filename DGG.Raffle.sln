@@ -5,13 +5,18 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.API", "DGG.Raffle.API\DGG.Raffle.API.csproj", "{078CF5FD-5E68-4654-8D16-5AB85BFABF56}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Service", "DGG.Raffle.Service\DGG.Raffle.Service.csproj", "{80B6C0FA-87D8-486D-8041-36E65181AE2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Business", "DGG.Raffle.Service\DGG.Raffle.Business.csproj", "{80B6C0FA-87D8-486D-8041-36E65181AE2D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Infrastructure", "DGG.Raffle.Infrastructure\DGG.Raffle.Infrastructure.csproj", "{99F33656-8E1F-4148-A615-4B06A58815EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Infrastructure.Abstract", "DGG.Raffle.Infrastructure.Abstract\DGG.Raffle.Infrastructure.Abstract.csproj", "{A30B1F0A-B23F-4F7F-86D3-B17F6724C5A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Service.Abstract", "DGG.Raffle.Service.Abstract\DGG.Raffle.Service.Abstract.csproj", "{EE096D6F-808E-48A7-A085-17481F38A65E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGG.Raffle.Business.Abstract", "DGG.Raffle.Service.Abstract\DGG.Raffle.Business.Abstract.csproj", "{EE096D6F-808E-48A7-A085-17481F38A65E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6DD725E1-4BF5-4217-9C21-9130B7FA40EF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

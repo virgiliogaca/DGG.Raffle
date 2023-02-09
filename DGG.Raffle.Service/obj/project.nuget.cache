@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XOBWDWdYtI7/XDVJ6HahaiCAbiXMlkwmwZ32Ewccdu1GCsNhIzqDRWz22dq+Cdqzs1cBnu0l1CMGcMJ84zYWew==",
+  "dgSpecHash": "HTBh7JJd1XSpsl5TcPPwixbgaUqRZlLkfW5fmOmX3AM0SXgSUuJcf810rgguPrn4QPxQMjGwhaxQ7yEj0Mpjcg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Service.csproj",
+  "projectFilePath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

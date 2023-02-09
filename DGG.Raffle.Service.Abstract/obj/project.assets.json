@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Service.Abstract.csproj",
-      "projectName": "DGG.Raffle.Service.Abstract",
-      "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Service.Abstract.csproj",
+      "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
+      "projectName": "DGG.Raffle.Business.Abstract",
+      "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj",
       "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\obj\\",
       "projectStyle": "PackageReference",
