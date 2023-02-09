@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
+      "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
       "projectName": "DGG.Raffle.Infrastructure.Abstract",
-      "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
+      "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj",
       "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\obj\\",
+      "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

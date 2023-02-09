@@ -46,6 +46,24 @@
           }
         }
       },
+      "Elasticsearch.Net/7.17.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "System.Buffers": "4.5.1",
+          "System.Diagnostics.DiagnosticSource": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Elasticsearch.Net.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Elasticsearch.Net.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -108,7 +126,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.6.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -713,6 +731,22 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "NEST/7.17.5": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "7.17.5"
+        },
+        "compile": {
+          "lib/netstandard2.0/Nest.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Nest.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -1246,6 +1280,30 @@
           }
         }
       },
+      "DGG.Raffle.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "DGG.Raffle.Business.Abstract": "1.0.0",
+          "DGG.Raffle.Infrastructure.Abstract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DGG.Raffle.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DGG.Raffle.Business.dll": {}
+        }
+      },
+      "DGG.Raffle.Business.Abstract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DGG.Raffle.Business.Abstract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DGG.Raffle.Business.Abstract.dll": {}
+        }
+      },
       "DGG.Raffle.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1311,6 +1369,28 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Elasticsearch.Net/7.17.5": {
+      "sha512": "orChsQi1Ceho/NyIylNOn6y4vuGcsbCfMZnCueNN0fzqYEGQmQdPfcVmsR5+3fwpXTgxCdjTUVmqOwvHpCSB+Q==",
+      "type": "package",
+      "path": "elasticsearch.net/7.17.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elasticsearch.net.7.17.5.nupkg.sha512",
+        "elasticsearch.net.nuspec",
+        "lib/net461/Elasticsearch.Net.dll",
+        "lib/net461/Elasticsearch.Net.pdb",
+        "lib/net461/Elasticsearch.Net.xml",
+        "lib/netstandard2.0/Elasticsearch.Net.dll",
+        "lib/netstandard2.0/Elasticsearch.Net.pdb",
+        "lib/netstandard2.0/Elasticsearch.Net.xml",
+        "lib/netstandard2.1/Elasticsearch.Net.dll",
+        "lib/netstandard2.1/Elasticsearch.Net.pdb",
+        "lib/netstandard2.1/Elasticsearch.Net.xml",
+        "license.txt",
+        "nuget-icon.png"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -1386,10 +1466,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.6.0": {
+      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1402,6 +1482,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1411,7 +1492,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.6.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -2493,6 +2574,25 @@
         "lib/netstandard2.0/Mono.TextTemplating.dll",
         "mono.texttemplating.2.2.1.nupkg.sha512",
         "mono.texttemplating.nuspec"
+      ]
+    },
+    "NEST/7.17.5": {
+      "sha512": "bo9UyuIoVRx4IUQiuC8ZrlZuvAXKIccernC7UUKukQCEmRq2eVIk+gubHlnMQljrP51q0mN4cjgy9vv5uZPkoA==",
+      "type": "package",
+      "path": "nest/7.17.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Nest.dll",
+        "lib/net461/Nest.pdb",
+        "lib/net461/Nest.xml",
+        "lib/netstandard2.0/Nest.dll",
+        "lib/netstandard2.0/Nest.pdb",
+        "lib/netstandard2.0/Nest.xml",
+        "license.txt",
+        "nest.7.17.5.nupkg.sha512",
+        "nest.nuspec",
+        "nuget-icon.png"
       ]
     },
     "Swashbuckle.AspNetCore/6.4.0": {
@@ -3923,6 +4023,16 @@
         "version.txt"
       ]
     },
+    "DGG.Raffle.Business/1.0.0": {
+      "type": "project",
+      "path": "../DGG.Raffle.Service/DGG.Raffle.Business.csproj",
+      "msbuildProject": "../DGG.Raffle.Service/DGG.Raffle.Business.csproj"
+    },
+    "DGG.Raffle.Business.Abstract/1.0.0": {
+      "type": "project",
+      "path": "../DGG.Raffle.Service.Abstract/DGG.Raffle.Business.Abstract.csproj",
+      "msbuildProject": "../DGG.Raffle.Service.Abstract/DGG.Raffle.Business.Abstract.csproj"
+    },
     "DGG.Raffle.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../DGG.Raffle.Infrastructure/DGG.Raffle.Infrastructure.csproj",
@@ -3936,11 +4046,14 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "DGG.Raffle.Business >= 1.0.0",
+      "DGG.Raffle.Business.Abstract >= 1.0.0",
       "DGG.Raffle.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.2",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.2",
+      "NEST >= 7.17.5",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -3951,11 +4064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
+      "projectUniqueName": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
       "projectName": "DGG.Raffle.API",
-      "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
+      "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\DGG.Raffle.API.csproj",
       "packagesPath": "C:\\Users\\virgi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.API\\obj\\",
+      "outputPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3977,8 +4090,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj"
+            "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Infrastructure\\DGG.Raffle.Infrastructure.csproj"
+            },
+            "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj": {
+              "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service.Abstract\\DGG.Raffle.Business.Abstract.csproj"
+            },
+            "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj": {
+              "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG.Raffle\\DGG.Raffle.Service\\DGG.Raffle.Business.csproj"
             }
           }
         }
@@ -4010,6 +4129,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.2, )"
+          },
+          "NEST": {
+            "target": "Package",
+            "version": "[7.17.5, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
