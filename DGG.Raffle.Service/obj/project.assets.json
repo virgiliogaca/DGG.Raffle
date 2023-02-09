@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "DGG.Raffle.Infrastructure.Abstract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/DGG.Raffle.Infrastructure.Abstract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DGG.Raffle.Infrastructure.Abstract.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DGG.Raffle.Infrastructure.Abstract/1.0.0": {
+      "type": "project",
+      "path": "../DGG.Raffle.Infrastructure.Abstract/DGG.Raffle.Infrastructure.Abstract.csproj",
+      "msbuildProject": "../DGG.Raffle.Infrastructure.Abstract/DGG.Raffle.Infrastructure.Abstract.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "DGG.Raffle.Infrastructure.Abstract >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\virgi\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj": {
+              "projectPath": "C:\\Users\\virgi\\Documents\\Repos\\DGG\\DGG.Raffle\\DGG.Raffle.Infrastructure.Abstract\\DGG.Raffle.Infrastructure.Abstract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
