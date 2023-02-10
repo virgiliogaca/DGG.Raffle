@@ -91,6 +91,21 @@ namespace DGG.Raffle.API.Controllers
                 .BuildAsync();
         }
 
+        [HttpDelete("RaffleEntry/{raffleEntryId}")]
+        [AllowAnonymous]
+        public async Task<BusinessResult<Guid>> DeleteRaffleEntry(Guid raffleEntryId)
+        {
+            var businessResult = await _raffleService.DeleteRaffleEntry(raffleEntryId);
+
+            return await BusinessResultBuilder<Guid>
+            .Create()
+                .WithData(businessResult.Data)
+                .WithMessage(businessResult.Message ?? string.Empty)
+                .WithHttpStatusCode(businessResult.StatusCode)
+                .IsSuccessful(businessResult.isSuccessful)
+                .BuildAsync();
+        }
+
         [HttpGet("RandomizedRaffleEntries/{raffleSessionId}")]
         [AllowAnonymous]
         public async Task<BusinessResult<List<RaffleEntryUserBusinessModel>>> GetRandomizedRaffleTickets(Guid raffleSessionId)

@@ -48,5 +48,12 @@ namespace DGG.Raffle.Business.Abstract.Services
         /// </summary>
         /// <returns></returns>
         Task<BusinessResult<string>> GetMoneyRaised();
+
+        /// <summary>
+        /// Deletes the raffle entry.
+        /// </summary>
+        /// <param name="raffleEntryId">The raffle entry identifier.</param>
+        /// <returns></returns>
+        Task<BusinessResult<Guid>> DeleteRaffleEntry(Guid raffleEntryId);
     }
 }
