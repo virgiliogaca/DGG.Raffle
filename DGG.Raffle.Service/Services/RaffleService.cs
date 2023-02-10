@@ -298,17 +298,6 @@ namespace DGG.Raffle.Business.Services
 
                 var raffleEntries = await _raffleEntriesRepository.GetByRaffleSessionId(raffleSessionId);
 
-                var groupedChatters = raffleEntries
-                    .Select(re => new RaffleEntries
-                    {
-                        Id = re.Id,
-                        ChatterName = re.ChatterName,
-                        ChatterMovie = re.ChatterMovie,
-                        MoneyDonated = re.MoneyDonated
-                    })
-                    .Where(x => x.IsActive)
-                    .ToList();
-
                 var chatterRaffleTickets = GetRaffleTickets(raffleEntries);
 
                 chatterRaffleTickets = chatterRaffleTickets.OrderBy(a => rng.Next()).ToList();
@@ -453,7 +442,8 @@ namespace DGG.Raffle.Business.Services
                         ChatterName = re.ChatterName,
                         ChatterMovie = re.ChatterMovie,
                         MoneyDonated = re.MoneyDonated
-                    }).ToList();
+                    })
+                    .ToList();
 
             var chatterRaffleTickets = new List<RaffleEntryUserBusinessModel>();
 

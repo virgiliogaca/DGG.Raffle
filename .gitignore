@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DGG.Raffle.API/appsettings.json
+/DGG.Raffle.API/appsettings.Development.json

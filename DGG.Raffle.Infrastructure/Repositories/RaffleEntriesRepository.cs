@@ -20,7 +20,7 @@ namespace DGG.Raffle.Infrastructure.Repositories
         {
             return await Context
                 .Set<RaffleEntries>()
-                .Where(w => w.RaffleSessionId == raffleSessionId)
+                .Where(w => w.RaffleSessionId == raffleSessionId && w.IsActive)
                 .ToListAsync()
                 .ConfigureAwait(false);
         }
