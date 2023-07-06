@@ -26,16 +26,6 @@ namespace DGG.Raffle.Infrastructure.Abstract.Entities
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Gets or sets the raffle session identifier.
-        /// </summary>
-        /// <value>
-        /// The raffle session identifier.
-        /// </value>
-        [ForeignKey(nameof(RaffleSessions.Id))]
-        [Required]
-        public Guid RaffleSessionId { get; set; }
-
-        /// <summary>
         /// Gets or sets the charity identifier.
         /// </summary>
         /// <value>
@@ -85,13 +75,5 @@ namespace DGG.Raffle.Infrastructure.Abstract.Entities
         /// The charity.
         /// </value>
         public Charities Charity { get; set; }
-
-        /// <summary>
-        /// Gets or sets the raffle session.
-        /// </summary>
-        /// <value>
-        /// The raffle session.
-        /// </value>
-        public RaffleSessions RaffleSession { get; set; }
     }
 }

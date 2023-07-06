@@ -23,36 +23,6 @@ namespace DGG.Raffle.API.Controllers
             _raffleService= raffleService;
         }
 
-        [HttpPost("RaffleSession")]
-        [AllowAnonymous]
-        public async Task<BusinessResult<RaffleSessionUpdatedResponse>> CreateRaffleSession()
-        {
-            var businessResult = await _raffleService.CreateRaffleSession();
-            var result = new RaffleSessionUpdatedResponse { RaffleSessionId = businessResult.Data };
-            return await BusinessResultBuilder<RaffleSessionUpdatedResponse>
-                .Create()
-                .WithData(result)
-                .WithMessage(businessResult.Message ?? string.Empty)
-                .WithHttpStatusCode(businessResult.StatusCode)
-                .IsSuccessful(businessResult.isSuccessful)
-                .BuildAsync();
-        }
-
-        [HttpDelete("RaffleSession/{id}")]
-        [AllowAnonymous]
-        public async Task<BusinessResult<RaffleSessionUpdatedResponse>> CloseRaffleSession(Guid id)
-        {
-            var businessResult = await _raffleService.CloseRaffleSession(id);
-            var result = new RaffleSessionUpdatedResponse { RaffleSessionId = businessResult.Data };
-            return await BusinessResultBuilder<RaffleSessionUpdatedResponse>
-                .Create()
-                .WithData(result)
-                .WithMessage(businessResult.Message ?? string.Empty)
-                .WithHttpStatusCode(businessResult.StatusCode)
-                .IsSuccessful(businessResult.isSuccessful)
-                .BuildAsync();
-        }
-
         /// <summary>
         /// Creates a new Raffle entry.
         /// </summary>
@@ -64,7 +34,6 @@ namespace DGG.Raffle.API.Controllers
         {
             var raffleEntry = new RaffleEntryBusinessModel()
             {
-                RaffleSessionId = raffleEntryRequest.RaffleSessionId,
                 ChatterName = raffleEntryRequest.ChatterName,
                 MovieName = raffleEntryRequest.MovieName,
                 MoneyDonated = raffleEntryRequest.MoneyDonated,
@@ -79,7 +48,6 @@ namespace DGG.Raffle.API.Controllers
                 ChatterMovie = businessResult.Data.ChatterMovie,
                 ChatterName = businessResult.Data.ChatterName,
                 MoneyDonated = businessResult.Data.MoneyDonated,
-                RaffleSessionId = businessResult.Data.RaffleSessionId
             };
 
             return await BusinessResultBuilder<RaffleEntryResponse>
@@ -106,11 +74,11 @@ namespace DGG.Raffle.API.Controllers
                 .BuildAsync();
         }
 
-        [HttpGet("RandomizedRaffleEntries/{raffleSessionId}")]
+        [HttpGet("RandomizedRaffleEntries")]
         [AllowAnonymous]
-        public async Task<BusinessResult<List<RaffleEntryUserBusinessModel>>> GetRandomizedRaffleTickets(Guid raffleSessionId)
+        public async Task<BusinessResult<List<RaffleEntryUserBusinessModel>>> GetRandomizedRaffleTickets()
         {
-            var businessResult = await _raffleService.GetRandomizeChattersInRaffle(raffleSessionId);
+            var businessResult = await _raffleService.GetRandomizeChattersInRaffle();
 
             return await BusinessResultBuilder<List<RaffleEntryUserBusinessModel>>
             .Create()
@@ -121,11 +89,11 @@ namespace DGG.Raffle.API.Controllers
                 .BuildAsync();
         }
 
-        [HttpGet("RaffleWinner/{raffleSessionId}")]
+        [HttpGet("RaffleWinner")]
         [AllowAnonymous]
-        public async Task<BusinessResult<RaffleEntryUserBusinessModel>> GetRaffleWinner(Guid raffleSessionId)
+        public async Task<BusinessResult<RaffleEntryUserBusinessModel>> GetRaffleWinner()
         {
-            var businessResult = await _raffleService.GetRaffleWinner(raffleSessionId);
+            var businessResult = await _raffleService.GetRaffleWinner();
 
             return await BusinessResultBuilder<RaffleEntryUserBusinessModel>
             .Create()

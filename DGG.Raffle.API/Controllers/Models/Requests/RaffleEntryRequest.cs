@@ -6,14 +6,6 @@
     public class RaffleEntryRequest
     {
         /// <summary>
-        /// Gets or sets the raffle session identifier.
-        /// </summary>
-        /// <value>
-        /// The raffle session identifier.
-        /// </value>
-        public Guid RaffleSessionId { get; set; }
-
-        /// <summary>
         /// Gets or sets the name of the chatter.
         /// </summary>
         /// <value>

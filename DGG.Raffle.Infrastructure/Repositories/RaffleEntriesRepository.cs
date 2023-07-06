@@ -12,20 +12,6 @@ namespace DGG.Raffle.Infrastructure.Repositories
             : base(context) { }
 
         /// <summary>
-        /// Gets the by raffle session identifier.
-        /// </summary>
-        /// <param name="raffleSessionId">The raffle session identifier.</param>
-        /// <returns></returns>
-        public async Task<List<RaffleEntries>> GetByRaffleSessionId(Guid raffleSessionId)
-        {
-            return await Context
-                .Set<RaffleEntries>()
-                .Where(w => w.RaffleSessionId == raffleSessionId && w.IsActive)
-                .ToListAsync()
-                .ConfigureAwait(false);
-        }
-
-        /// <summary>
         /// Gets all.
         /// </summary>
         /// <returns></returns>
@@ -33,6 +19,19 @@ namespace DGG.Raffle.Infrastructure.Repositories
         {
             return await Context
                 .Set<RaffleEntries>()
+                .ToListAsync()
+                .ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Gets all without winners.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<List<RaffleEntries>> GetAllWithoutWinners()
+        {
+            return await Context
+                .Set<RaffleEntries>()
+                .Where(w => w.isRaffleWinner == false && w.IsActive == true)
                 .ToListAsync()
                 .ConfigureAwait(false);
         }

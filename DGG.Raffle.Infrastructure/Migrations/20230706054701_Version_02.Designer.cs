@@ -4,6 +4,7 @@ using DGG.Raffle.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DGG.Raffle.Infrastructure.Migrations
 {
     [DbContext(typeof(DggRaffleDbContext))]
-    partial class DggRaffleDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230706054701_Version_02")]
+    partial class Version02
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

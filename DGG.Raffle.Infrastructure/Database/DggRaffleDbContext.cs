@@ -13,11 +13,6 @@ namespace DGG.Raffle.Infrastructure.Database
         }
 
         /// <summary>
-        /// Raffle Sessions DB table
-        /// </summary>
-        public DbSet<RaffleSessions> RaffleSessions { get; set; }
-
-        /// <summary>
         /// Raffle Entries DB table
         /// </summary>
         public DbSet<RaffleEntries> RaffleEntries { get; set;}
@@ -29,9 +24,6 @@ namespace DGG.Raffle.Infrastructure.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<RaffleSessions>()
-                .HasKey(s => s.Id);
-
             modelBuilder.Entity<Charities>()
                 .HasKey(s => s.Id);
 
@@ -49,9 +41,7 @@ namespace DGG.Raffle.Infrastructure.Database
                 .HasForeignKey(s => s.CharityId);
 
             modelBuilder.Entity<RaffleEntries>()
-                .HasOne(s => s.RaffleSession)
-                .WithMany(s => s.RaffleEntry)
-                .HasForeignKey(s => s.RaffleSessionId);
+                .HasKey(s => s.Id);
 
             base.OnModelCreating(modelBuilder);
         }

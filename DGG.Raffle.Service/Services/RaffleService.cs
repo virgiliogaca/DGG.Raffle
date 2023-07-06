@@ -21,7 +21,6 @@ namespace DGG.Raffle.Business.Services
     {
         private readonly IRaffleEntriesRepository _raffleEntriesRepository;
         private readonly ICharitiesRepository _charitiesRepository;
-        private readonly IRaffleSessionsRepository _raffleSessionsRepository;
         private readonly IUnitOfWork _unitOfWork;
         private static Random rng = new Random();
 
@@ -30,99 +29,17 @@ namespace DGG.Raffle.Business.Services
         /// </summary>
         /// <param name="raffleEntriesRepository">The raffle entries repository.</param>
         /// <param name="charitiesRepository">The charities repository.</param>
-        /// <param name="raffleSessionsRepository">The raffle sessions repository.</param>
         /// <param name="unitOfWork">The unit of work.</param>
         public RaffleService(
             IRaffleEntriesRepository raffleEntriesRepository,
             ICharitiesRepository charitiesRepository,
-            IRaffleSessionsRepository raffleSessionsRepository,
             IUnitOfWork unitOfWork)
         {
             _raffleEntriesRepository = raffleEntriesRepository;
             _charitiesRepository = charitiesRepository;
-            _raffleSessionsRepository = raffleSessionsRepository;
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<BusinessResult<Guid>> CreateRaffleSession()
-        {
-            try
-            {
-                var newSession = Guid.NewGuid();
-
-                var raffleSession = new RaffleSessions
-                {
-                    Id = newSession,
-                    CreatedBy = "VirgilGC"
-                };
-
-                await _raffleSessionsRepository.AddAsync(raffleSession).ConfigureAwait(false);
-
-                await _unitOfWork.CompleteAsync().ConfigureAwait(false);
-
-                return await BusinessResultBuilder<Guid>
-                    .Create()
-                    .Success()
-                    .WithMessage("Session Created successfuly")
-                    .WithData(newSession)
-                    .WithHttpStatusCode(HttpStatusCode.OK)
-                    .BuildAsync().ConfigureAwait(false);
-            }
-            catch (Exception ex)
-            {
-                return await BusinessResultBuilder<Guid>
-                    .Create()
-                    .Fail()
-                    .WithData(Guid.Empty)
-                    .WithMessage(ex.Message)
-                    .WithHttpStatusCode(HttpStatusCode.BadRequest)
-                    .BuildAsync().ConfigureAwait(false);
-            }
-        }
-
-        public async Task<BusinessResult<Guid>> CloseRaffleSession(Guid raffleSessionId)
-        {
-            try
-            {
-                var raffleSession = await _raffleSessionsRepository.GetByIdAsync(raffleSessionId).ConfigureAwait(false);
-
-                if (!raffleSession.IsActive || raffleSession == null) {
-                    return await BusinessResultBuilder<Guid>
-                    .Create()
-                    .Fail()
-                    .WithData(Guid.Empty)
-                    .WithMessage("Raffle session is either closed or does not exist.")
-                    .WithHttpStatusCode(HttpStatusCode.NotFound)
-                    .BuildAsync().ConfigureAwait(false);
-                }
-
-                raffleSession.IsActive = false;
-                raffleSession.ModifiedDate = DateTime.UtcNow;
-                raffleSession.ModifiedBy = "VirgilGC";
-
-                _raffleSessionsRepository.Update(raffleSession);
-
-                await _unitOfWork.CompleteAsync().ConfigureAwait(false);
-
-                return await BusinessResultBuilder<Guid>
-                    .Create()
-                    .Success()
-                    .WithMessage("Session Closed successfuly")
-                    .WithData(raffleSession.Id)
-                    .WithHttpStatusCode(HttpStatusCode.OK)
-                    .BuildAsync().ConfigureAwait(false);
-            }
-            catch (Exception ex)
-            {
-                return await BusinessResultBuilder<Guid>
-                    .Create()
-                    .Fail()
-                    .WithData(Guid.Empty)
-                    .WithMessage(ex.Message)
-                    .WithHttpStatusCode(HttpStatusCode.BadRequest)
-                    .BuildAsync().ConfigureAwait(false);
-            }
-        }
 
         /// <summary>
         /// Deletes the raffle entry.
@@ -178,20 +95,7 @@ namespace DGG.Raffle.Business.Services
         {
             try
             {
-                var raffleSession = await _raffleSessionsRepository.GetByIdAsync(raffleEntryRequest.RaffleSessionId).ConfigureAwait(false);
-                if (!raffleSession.IsActive || raffleSession == null)
-                {
-                    return await BusinessResultBuilder<RaffleEntries>
-                    .Create()
-                    .Fail()
-                    .WithData(new RaffleEntries())
-                    .WithMessage("Could not create raffle entry session is either closed or does not exist.")
-                    .WithHttpStatusCode(HttpStatusCode.NotFound)
-                    .BuildAsync().ConfigureAwait(false);
-                }
-
                 if (raffleEntryRequest == null ||
-                raffleEntryRequest.RaffleSessionId == Guid.Empty ||
                 raffleEntryRequest.ChatterName == string.Empty ||
                 raffleEntryRequest.MovieName == string.Empty)
                 {
@@ -231,7 +135,6 @@ namespace DGG.Raffle.Business.Services
                 var raffleEntry = new RaffleEntries()
                 {
                     Id = raffleEntryId,
-                    RaffleSessionId = raffleEntryRequest.RaffleSessionId,
                     CharityId = (int)CharityEnum.AgainstMalariaFoundation,
                     ChatterName = raffleEntryRequest.ChatterName,
                     ChatterMovie = raffleEntryRequest.MovieName,
@@ -269,34 +172,11 @@ namespace DGG.Raffle.Business.Services
         /// </summary>
         /// <param name="raffleSessionId">The raffle session identifier.</param>
         /// <returns></returns>
-        public async Task<BusinessResult<List<RaffleEntryUserBusinessModel>>> GetRandomizeChattersInRaffle(Guid raffleSessionId)
+        public async Task<BusinessResult<List<RaffleEntryUserBusinessModel>>> GetRandomizeChattersInRaffle()
         {
             try
             {
-                if (raffleSessionId == Guid.Empty)
-                {
-                    return await BusinessResultBuilder<List<RaffleEntryUserBusinessModel>>
-                        .Create()
-                        .Fail()
-                        .WithMessage("raffleSessionId cannot be empty")
-                        .WithData(new List<RaffleEntryUserBusinessModel>())
-                        .WithHttpStatusCode(HttpStatusCode.BadRequest)
-                        .BuildAsync().ConfigureAwait(false);
-                }
-
-                var raffleSession = await _raffleSessionsRepository.GetByIdAsync(raffleSessionId).ConfigureAwait(false);
-                if (!raffleSession.IsActive || raffleSession == null)
-                {
-                    return await BusinessResultBuilder<List<RaffleEntryUserBusinessModel>>
-                    .Create()
-                    .Fail()
-                    .WithData(new List<RaffleEntryUserBusinessModel>())
-                    .WithMessage("Could not retrieve randomized chatters, the session is either closed or does not exist.")
-                    .WithHttpStatusCode(HttpStatusCode.NotFound)
-                    .BuildAsync().ConfigureAwait(false);
-                }
-
-                var raffleEntries = await _raffleEntriesRepository.GetByRaffleSessionId(raffleSessionId);
+                var raffleEntries = await _raffleEntriesRepository.GetAllWithoutWinners();
 
                 var chatterRaffleTickets = GetRaffleTickets(raffleEntries);
 
@@ -325,36 +205,12 @@ namespace DGG.Raffle.Business.Services
         /// <summary>
         /// Gets the raffle winner.
         /// </summary>
-        /// <param name="raffleSessionId">The raffle session identifier.</param>
         /// <returns></returns>
-        public async Task<BusinessResult<RaffleEntryUserBusinessModel>> GetRaffleWinner(Guid raffleSessionId)
+        public async Task<BusinessResult<RaffleEntryUserBusinessModel>> GetRaffleWinner()
         {
             try
             {
-                if (raffleSessionId == Guid.Empty)
-                {
-                    return await BusinessResultBuilder<RaffleEntryUserBusinessModel>
-                        .Create()
-                        .Fail()
-                        .WithMessage("raffleSessionId cannot be empty")
-                        .WithData(new RaffleEntryUserBusinessModel())
-                        .WithHttpStatusCode(HttpStatusCode.BadRequest)
-                        .BuildAsync().ConfigureAwait(false);
-                }
-
-                var raffleSession = await _raffleSessionsRepository.GetByIdAsync(raffleSessionId).ConfigureAwait(false);
-                if (!raffleSession.IsActive || raffleSession == null)
-                {
-                    return await BusinessResultBuilder<RaffleEntryUserBusinessModel>
-                    .Create()
-                    .Fail()
-                    .WithData(new RaffleEntryUserBusinessModel())
-                    .WithMessage("Could not retrieve winner chatter, the session is either closed or does not exist.")
-                    .WithHttpStatusCode(HttpStatusCode.NotFound)
-                    .BuildAsync().ConfigureAwait(false);
-                }
-
-                var raffleEntries = await _raffleEntriesRepository.GetByRaffleSessionId(raffleSessionId);
+                var raffleEntries = await _raffleEntriesRepository.GetAllWithoutWinners();
 
                 var chatterRaffleTickets = GetRaffleTickets(raffleEntries);
 
@@ -365,6 +221,19 @@ namespace DGG.Raffle.Business.Services
                     ChatterMovie = chatterRaffleTickets[index].ChatterMovie,
                     ChatterName = chatterRaffleTickets[index].ChatterName
                 };
+                var raffleEntry = raffleEntries.Where(x => x.Id == getWinner.Id).FirstOrDefault();
+
+                if (raffleEntry != null)
+                {
+                    raffleEntry.isRaffleWinner = true;
+                    raffleEntry.ModifiedBy = "sys";
+                    raffleEntry.ModifiedDate = DateTime.UtcNow;
+                    _raffleEntriesRepository.Update(raffleEntry);
+                }
+
+                await _unitOfWork.CompleteAsync().ConfigureAwait(false);
+
+                _unitOfWork.Dispose();
 
                 return await BusinessResultBuilder<RaffleEntryUserBusinessModel>
                         .Create()

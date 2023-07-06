@@ -20,7 +20,6 @@ builder.Services.AddScoped<IRaffleService, RaffleService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICharitiesRepository, CharitiesRepository>();
 builder.Services.AddScoped<IRaffleEntriesRepository, RaffleEntriesRepository>();
-builder.Services.AddScoped<IRaffleSessionsRepository, RaffleSessionsRepository>();
 
 builder.Services.AddDbContext<DggRaffleDbContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DggDbConnection"));
