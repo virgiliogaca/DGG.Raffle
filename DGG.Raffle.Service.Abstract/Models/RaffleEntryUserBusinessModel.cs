@@ -31,5 +31,10 @@ namespace DGG.Raffle.Business.Abstract.Models
         /// The chatter movie.
         /// </value>
         public string ChatterMovie { get; set; }
+
+        /// <summary>
+        /// Gets or sets the chatter's dono/
+        /// </summary>
+        public string moneyDonated { get; set; }
     }
 }

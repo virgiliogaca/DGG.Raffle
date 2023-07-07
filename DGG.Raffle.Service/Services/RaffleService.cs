@@ -219,7 +219,8 @@ namespace DGG.Raffle.Business.Services
                 {
                     Id = chatterRaffleTickets[index].Id,
                     ChatterMovie = chatterRaffleTickets[index].ChatterMovie,
-                    ChatterName = chatterRaffleTickets[index].ChatterName
+                    ChatterName = chatterRaffleTickets[index].ChatterName,
+                    moneyDonated = chatterRaffleTickets[index].moneyDonated
                 };
                 var raffleEntry = raffleEntries.Where(x => x.Id == getWinner.Id).FirstOrDefault();
 
@@ -325,6 +326,7 @@ namespace DGG.Raffle.Business.Services
                         ChatterMovie = chatter.ChatterMovie,
                         ChatterName = chatter.ChatterName,
                         Id = chatter.Id,
+                        moneyDonated = chatter.MoneyDonated.ToString()
                     };
 
                     chatterRaffleTickets.Add(raffleTicket);
