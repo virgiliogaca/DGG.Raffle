@@ -118,5 +118,24 @@ namespace DGG.Raffle.API.Controllers
                 .IsSuccessful(businessResult.isSuccessful)
                 .BuildAsync();
         }
+
+        /// <summary>
+        /// Gets the money raised.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("CharityMoneyPool")]
+        [AllowAnonymous]
+        public async Task<BusinessResult<string>> GetMoneyPool()
+        {
+            var businessResult = await _raffleService.GetRafflePool().ConfigureAwait(false);
+
+            return await BusinessResultBuilder<string>
+            .Create()
+                .WithData(businessResult.Data)
+                .WithMessage(businessResult.Message ?? string.Empty)
+                .WithHttpStatusCode(businessResult.StatusCode)
+                .IsSuccessful(businessResult.isSuccessful)
+                .BuildAsync();
+        }
     }
 }

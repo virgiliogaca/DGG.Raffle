@@ -299,6 +299,48 @@ namespace DGG.Raffle.Business.Services
         }
 
         /// <summary>
+        /// Gets the raffle pool.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<BusinessResult<string>> GetRafflePool()
+        {
+            try
+            {
+                var raffleEntries = await _raffleEntriesRepository.GetAllWithoutWinners().ConfigureAwait(false);
+                if (raffleEntries.Count == 0)
+                {
+                    return await BusinessResultBuilder<string>
+                            .Create()
+                            .Success()
+                            .WithMessage("Got charity pool earned.")
+                            .WithData("0")
+                            .WithHttpStatusCode(HttpStatusCode.OK)
+                            .BuildAsync().ConfigureAwait(false);
+                }
+
+                var moneyRaised = raffleEntries.Where(x => x.IsActive).Sum(x => x.MoneyDonated).ToString();
+
+                return await BusinessResultBuilder<string>
+                            .Create()
+                            .Success()
+                            .WithMessage("Got total charity earned.")
+                            .WithData(moneyRaised)
+                            .WithHttpStatusCode(HttpStatusCode.OK)
+                            .BuildAsync().ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                return await BusinessResultBuilder<string>
+                            .Create()
+                            .Success()
+                            .WithMessage(ex.Message)
+                            .WithData("")
+                            .WithHttpStatusCode(HttpStatusCode.BadRequest)
+                            .BuildAsync().ConfigureAwait(false);
+            }
+        }
+
+        /// <summary>
         /// Gets the raffle tickets.
         /// </summary>
         /// <param name="raffleEntries">The raffle entries.</param>
